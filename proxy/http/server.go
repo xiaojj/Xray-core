@@ -244,7 +244,7 @@ func (s *Server) handlePlainHTTP(ctx context.Context, request *http.Request, wri
 
 	// Prevent UA from being set to golang's default ones
 	if request.Header.Get("User-Agent") == "" {
-		request.Header.Set("User-Agent", "")
+		request.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36")
 	}
 
 	content := &session.Content{
